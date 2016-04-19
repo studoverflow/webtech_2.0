@@ -56,12 +56,12 @@ a:hover {
     color:#5491bd;
 }
 
-.navbar-trans li>a:focus,.navbar-trans li.active {
+.navbar-trans li > a:focus,.navbar-trans li.active {
 	background-color:#5491bd;
 	color:#333;
 }
 
-.navbar-trans li>a:hover {
+.navbar-trans li > a:hover {
 	background-color:#5491bd;
 	color:#fff;
 	opacity:0.5;
@@ -181,12 +181,12 @@ footer {
     padding-bottom:40px;
 }
 
-footer .nav>li>a {
+footer .nav > li > a {
     padding: 3px;
     color: #5491bd;
 }
 
-footer .nav>li>a:hover {
+footer .nav > li > a:hover {
     background-color:transparent;
 	color:#fff;
 }
