@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color:#111;
+    color:#5491bd;
 }
 
 .btn,.well,.panel {
@@ -88,8 +88,9 @@ a:hover {
   position: absolute;
   left: 50%;
   bottom: 40px;
-  border: 2px solid #fff;
+/*  border: 2px solid #fff;
   border-radius: 50%;
+ */
   height: 50px;
   width: 50px;
   margin-left: -15px;
@@ -146,7 +147,8 @@ section {
 }
   
 #section1, #section3 {
-	background-color: rgba(0,0,0,0.7);
+	background-color: #111;
+	opacity: 0.7;
 	color:#fff;
 }
   
@@ -155,21 +157,26 @@ section {
 }
 
 #section3 {
-	background-color: #5491bd;
+	background-color: #111;
 	opacity: 0.8;
 	color:#fff;
 }
 
 #section4 {
-	background-color: rgba(0,0,0,0.9);
-	opacity: 0.8;
+	background-color: #fff;
 }
   
 #section5 {
+	background-color: #111;
+	opacity: 0.8;
+	color:#fff;
+}
+  
+#section6 {
 	background-color: #fff;
 }
 
-#section6 {
+#section7 {
     background-color: #5491bd;
 	min-height:130px;
 	padding-top:40px;
