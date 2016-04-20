@@ -22,8 +22,8 @@ a:hover {
     color:#5491bd;
 }
 
-header {
-	border-bottom: 1px solid #fff;
+.navborderbot {
+	border-bottom: 1px solid #fff !important;
 	
 }
 
