@@ -236,15 +236,25 @@ footer {
 	border: 1px solid;
 	color: #fff;
 	background-color: #111;
+	margin-bottom: 10px;
+
 }
 
 .massagemain {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: #f3f3f3;
+	max-width: 100%;
+ 	min-height: 105px;
 
 }
 
 .massageimg {
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+img {
+	max-width: 100%;
+ 	height: auto;
 }
