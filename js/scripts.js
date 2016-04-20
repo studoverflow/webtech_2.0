@@ -1,10 +1,8 @@
-/* activate scrollspy menu */
 $('body').scrollspy({
   target: '#navbar-collapsible',
   offset: 52
 });
 
-/* smooth scrolling sections */
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -20,9 +18,7 @@ $('a[href*=#]:not([href=#])').click(function() {
         else {
             $('.scroll-up').show();
         }
-        
-        
-        // activte animations in this section
+                
         target.find('.animate').delay(1200).addClass("animated");
         setTimeout(function(){
             target.find('.animated').removeClass("animated");
