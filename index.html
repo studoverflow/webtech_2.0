@@ -6,8 +6,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Codeply">
-
-
+    <meta name="author" content="Stephen Beck, Markus Jäckle">
+	<meta name="description" content="Studoverflow ist ein Portal zum Informationsaustausch von Studenten">       
+    <meta name="email" content="info@studoverflow.de">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -16,35 +18,46 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body >
-    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#section1">Home</a>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-collapsible">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#section2">Neuste Fragen</a></li>
-                <li><a href="#section3">Beliebte Fragen</a></li>
-                <li><a href="#section4">Übersicht</a></li>
-                <li><a href="#section5">Interessant</a></li>
-                <li>&nbsp;</li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-		        <p class="text-center margintop15">
-		            <a href="#" data-toggle="modal" data-target="#myModal">
-		            	<span class="glyphicon glyphicon-user"></span> Login
-	            	</a>
-		        </p>
-            </ul>
-        </div>
-    </div>
-	</nav>
+  	
+  	<header>
+		<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#section1">Home</a>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar-collapsible">
+						<ul class="nav navbar-nav navbar-left">
+							<li>
+								<a href="#section2">Neuste Fragen</a>
+							</li>
+							<li>
+								<a href="#section3">Beliebte Fragen</a>
+							</li>
+							<li>
+								<a href="#section4">Unbeantwortete Fragen</a>
+							</li>
+							<li>
+								<a href="#section5">Übersicht</a>
+							</li>
+							<li>
+								&nbsp;
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<p class="text-center margintop15">
+								<a href="#" data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-user"></span> Login </a>
+							</p>
+						</ul>
+					</div>
+				</div>
+				</nav>
+	</header>
 
 	<section class="container-fluid" id="section1">
 	    <div class="v-center">
@@ -134,6 +147,7 @@
 	        <!--/row-->
 	    </section>
 	    <!--/container-->
+	    
 	    <a href="#section3">
 	        <div class="scroll-down bounceInDown animated">
 	            <span>
@@ -142,12 +156,11 @@
 	        </div>
 	    </a>
 	</section>
-	<section class="container-fluid" id="section3">
+
+		<section class="container-fluid" id="section3">
 		<h1 class="text-center">Beliebte Fragen</h1>
 	    <section class="container">
 	        <article class="row">
-	        	
-	        	
 	        	<div class="col-sm-12">
 	        		<div class="col-sm-6">
 	        			<div class="col-sm-12">
@@ -214,6 +227,9 @@
 	        <!--/row-->
 	    </section>
 	    <!--/container-->
+	         </div>
+	         
+	    </div>
 	    <a href="#section4">
 	        <div class="scroll-down bounceInDown animated">
 	            <span>
@@ -224,28 +240,7 @@
 	</section>
 	
 	<section class="container-fluid" id="section4">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-12">
-	                <h1 class="text-center">Übersicht aller Fragen</h1>
-	                <hr>
-	            </div>
-	         </div>
-	         <div class="row">
-	         		
-	         </div>
-	    </div>
-	    <a href="#section5">
-	        <div class="scroll-down bounceInDown animated">
-	            <span>
-	                <i class="fa fa-angle-down fa-2x"></i>
-	            </span>
-	        </div>
-	    </a>
-	</section>
-	
-		<section class="container-fluid" id="section5">
-		<h1 class="text-center">Neuste Fragen</h1>
+		<h1 class="text-center">Unbeantwortete Fragen</h1>
 	    <section class="container">
 	        <article class="row">
 	        	<div class="col-sm-12">
@@ -260,7 +255,7 @@
 							Kann mir jemand helfen? <br />	
 						</div>
 						<div class="col-sm-12 margquestion">
-							<b>Antworten:</b> 2 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -274,10 +269,124 @@
 							Kann mir jemand helfen? <br />	
 						</div>
 						<div class="col-sm-12 margquestion">
-							<b>Antworten:</b> 2 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
 						</div>
 	       			</div>
-	       		</div>	   
+	       		</div>
+				
+	        	<div class="col-sm-12">
+	        		<div class="col-sm-6">
+	        			<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12 question">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+	       			</div>
+	       		</div>
+	   
+	        </article>
+	        <!--/row-->
+	    </section>
+	    <!--/container-->
+
+	    <a href="#section5">
+	        <div class="scroll-down bounceInDown animated">
+	            <span>
+	                <i class="fa fa-angle-down fa-2x"></i>
+	            </span>
+	        </div>
+	    </a>
+	</section>
+
+	
+	
+	<section class="container-fluid" id="section5">
+		<h1 class="text-center">Übersicht aller Fragen</h1>
+	    <section class="container">
+	        <article class="row">
+	        	<div class="col-sm-12">
+	        		<div class="col-sm-6">
+	        			<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12 question">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+	       			</div>
+	       		</div>
+				
+	        	<div class="col-sm-12">
+	        		<div class="col-sm-6">
+	        			<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="col-sm-12">
+	        				<b><a href="#">Die Legendäre IF-Schleife</a></b> von <b><a href="#">Enes</a></b> am 04.04.2016
+	        			</div>
+	        			<div class="col-sm-12 question">
+							Hallo Zusammen, <br />
+							ich bin der Enes und Studieren Wirtschaftsinformatik. <br />
+							Leider hab ich das mit der IF-SCHLEIFE noch nicht ganz verstanden. <br />
+							Kann mir jemand helfen? <br />	
+						</div>
+						<div class="col-sm-12 margquestion">
+							<b>Antworten:</b> 0 &nbsp;&nbsp;&nbsp; <b>Aufrufe:</b> 13
+						</div>
+	       			</div>
+	       		</div>
+	   
 	        </article>
 	        <!--/row-->
 	    </section>
@@ -290,101 +399,110 @@
 	        </div>
 	    </a>
 	</section>
-
-	
 	
 	<section class="container-fluid" id="section6">
-	    <div class="row">
-	        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2">
-	            <h2 class="text-center lato">Interessant</h2>
-	            <hr>
-	            <div class="media">
-	                <h3>Mathematik</h3>
-	                <div class="media-left">
-	                    <img src="//placehold.it/100">
-	                </div>
-	                <div class="media-body media-middle">
-	                    <p>Christian Spahnnagel</p>
-	                </div>
-	            </div>
-	            <hr>
-	            <div class="media">
-	                <h3>Programmieren</h3>
-	                <div class="media-body media-middle">
-	                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-	                </div>
-	                <div class="media-right">
-	                    <img src="//placehold.it/100">
-	                </div>
-	            </div>
-	            <hr>
-	            <div class="media">
-	                <h3>Boom</h3>
-	                <div class="media-left">
-	                    <img src="//placehold.it/100">
-	                </div>
-	                <div class="media-body media-middle">
-	                    <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-	                </div>
-	            </div>
-	            <hr>
-	            <div class="media">
-	                <h3>Boom</h3>
-	                <div class="media-body media-middle">
-	                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-	                </div>
-	                <div class="media-right">
-	                    <img src="//placehold.it/100">
-	                </div>
-	            </div>
-	            <hr>
-	            <div class="media">
-	                <h3>Boom</h3>
-	                <div class="media-left">
-	                    <img src="//placehold.it/100">
-	                </div>
-	                <div class="media-body media-middle">
-	                    <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-	                </div>
-	            </div>
-	            <hr>
-	            <div class="media">
-	                <h3>Boom</h3>
-	                <div class="media-body media-middle">
-	                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-	                </div>
-	                <div class="media-right">
-	                    <img src="//placehold.it/100">
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</section>	
-	<section class="container-fluid" id="section7">
-	    <ul class="row list-unstyled">
-	        <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
-	            <h3 class="text-center">This will scale down proportionately.</h3>
-	        </li>
-	        <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-	            <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Responsive Design</a>
-	        </li>
-	    </ul>
+		<h1 class="text-center">Registrierung</h1>
+		<section class="container.fluid">
+			<form class="row" action="#" method="post" name="registration" >
+				<div class="col-sm-offset-4 col-sm-8">
+					<label>
+						<span class="glyphicon glyphicon-user"> Username</span>
+					</label><br />
+					<input type="text" name="user">
+				</div>
+				<div class="col-sm-offset-4 col-sm-8">
+					<label>
+						<br />
+						<span class="glyphicon glyphicon-envelope"> E-Mail</span>
+					</label><br />
+					<input type="email" name="email" >
+				</div>
+				<div class="col-sm-offset-4 col-sm-8">
+					<label>
+						<br />
+						<span class="glyphicon glyphicon-envelope"> E-Mail bestätigen</span>
+					</label><br />
+					<input type="email" name="email">
+				</div>
+				<div class="col-sm-offset-4 col-sm-8">
+					<label>
+						<br />
+						<span class="glyphicon glyphicon-lock"> Passwort</span>
+					</label><br />
+					<input type="password" name="passwort">
+				</div>
+				<div class="col-sm-offset-4 col-sm-8">
+					<label>
+						<br />
+						<span class="glyphicon glyphicon-lock"> Passwort bestätigen</span>
+					</label><br />
+					<input type="password" name="passwort">
+				</div>
+				<div class="col-sm-offset-4 col-sm-8">
+					<br />
+					<input class="btn-primary btn-xs" type="button" value="Registrieren">
+				</div>
+			</form>
+		</section>
+
 	</section>
-	<footer id="footer">
+	
+	<section class="container-fluid" id="section7">
+		<h1 class="text-center">Profil</h1>
+		<section class="container.fluid">
+			
+		</section>
+		
+	</section>
+	
+	<section class="container-fluid" id="section8">
+		<h1 class="text-center">Impressum</h1>
+		<section class="container.fluid">
+			
+		</section>
+		
+	</section>
+	
+	<section class="container-fluid" id="section9">
+		<h1 class="text-center">Datenschutz</h1>
+		<section class="container.fluid">
+			
+		</section>
+		
+	</section>
+	
+		
+	
+	<section class="container-fluid" id="section10">
+		<h1 class="text-center">Rechtliche Hinweise</h1>
+		<section class="container.fluid">
+			
+		</section>
+		
+	</section>
+	
+	<section class="container-fluid" id="section11">
+		<h1 class="text-center">Frage</h1>
+		<section class="container.fluid">
+			
+		</section>
+		
+	</section>
+
+	<footer class="navbar-trans navbar-fixed-bottom">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-xs-12 col-md-12 column">
-					<div style="text-align: center">						
-		                <h4>Follow Us</h4>
-		                <a href="#">Impressum</a>
-		                <a href="#">Datenschutz</a>
+					<div style="text-align: center">
+		                <a href="#">Impressum | </a>
+		                <a href="#">Datenschutz | </a>
 		                <a href="#">Rechtliche Hinweise</a>
 					</div>
 	            </div>
 	        </div>
 	        <!--/row-->
-	        <p class="text-right">©2015</p>
 	    </div>
+	    <!-- /container -->
 	</footer>
 	
 	<div class="scroll-up">
