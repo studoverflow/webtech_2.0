@@ -30,6 +30,7 @@ a:hover {
     background-color:#5491bd;
     border-color:#5491bd;
     color:#fff;
+    border-radius: 50px;
 }
 
 .text-danger, a.text-danger {
@@ -39,6 +40,10 @@ a:hover {
 .btn-huge {
     padding:17px 22px;
     font-size:22px;
+}
+
+.btn-danger {
+	border-radius: 50px;
 }
 
 .icon-bar {
@@ -68,7 +73,7 @@ a:hover {
 }
 
 .navbar-trans a{
-    color:#cdcdcd;
+    color:#fff;
     letter-spacing:1px;
 }
 
@@ -123,6 +128,10 @@ section {
     transform-style: preserve-3d;
 }
 
+.margintop15 {
+	margin-top: 15px;
+}
+
 .margquestion {
 	margin-bottom: 50px;
 }
@@ -141,25 +150,27 @@ section {
 	color:#fff;
 }
   
-#section4 {
-	background-color: #f6f6f6;
-	color:#444;
-}
-  
 #section2 {
 	background-color: #fff;
 }
 
 #section3 {
-	background-color: rgba(0,0,0,0.9);
+	background-color: #5491bd;
+	opacity: 0.8;
+	color:#fff;
 }
 
+#section4 {
+	background-color: rgba(0,0,0,0.9);
+	opacity: 0.8;
+}
+  
 #section5 {
 	background-color: #fff;
 }
 
 #section6 {
-    background-color: #eee;
+    background-color: #5491bd;
 	min-height:130px;
 	padding-top:40px;
 	padding-bottom:40px;
@@ -179,6 +190,7 @@ footer {
     min-height:100px;
     padding-top:20px;
     padding-bottom:40px;
+    opacity: 0.8;
 }
 
 footer .nav > li > a {
