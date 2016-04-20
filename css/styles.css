@@ -32,9 +32,9 @@ a:hover {
     border-radius:0;
 }
 
-.btn-blue {
-    background-color:#5491bd;
-    border-color:#5491bd;
+.btn-black {
+    background-color:#111;
+    border-color:#fff;
     color:#fff;
     border-radius: 50px;
 }
@@ -152,9 +152,9 @@ section {
     }
 }
   
-#section1, #section3 {
-	background-color: #111;
-	opacity: 0.8;
+#section1 {
+	background-color: #00004d;
+	opacity: 0.6;
 	color:#fff;
 }
   
@@ -163,7 +163,7 @@ section {
 }
 
 #section3 {
-	background-color: #111;
+	background-color: #00004d;
 	opacity: 0.8;
 	color:#fff;
 }
@@ -173,7 +173,7 @@ section {
 }
   
 #section5 {
-	background-color: #111;
+	background-color: #00004d;
 	opacity: 0.8;
 	color:#fff;
 }
@@ -184,15 +184,16 @@ section {
 
 
 #section7 {
-	background-color: #111;
+	background-color: #00004d;
 	color: #fff;
+	opacity: 0.95;
 }
 
 
 #section8 {
 	background-color: #fff;
 	color: #111;
-	opacity: 0.8;
+
 }
 
 
