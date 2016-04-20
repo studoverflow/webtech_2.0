@@ -179,7 +179,7 @@ section {
 }
   
 #section6 {
-	background-color: #fff;
+	background-color: #f1f1f1;
 }
 
 
@@ -220,4 +220,31 @@ footer {
     padding-top:2px;
     padding-bottom:2px;
     border-top: 1px solid #fff !important;
+}
+
+.profilpad {
+	padding-left: 150px;
+}
+
+.massagetop {
+	border: 1px solid;
+	color: #fff;
+	background-color: #111;
+}
+
+.massagebot {
+	border: 1px solid;
+	color: #fff;
+	background-color: #111;
+}
+
+.massagemain {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.massageimg {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
