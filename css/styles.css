@@ -18,9 +18,9 @@ a {
     color:#999;
 }
 
-a:hover {
-    color:#5491bd;
-}
+
+
+
 
 .navborderbot {
 	border-bottom: 1px solid #fff !important;
@@ -29,11 +29,16 @@ a:hover {
 
 
 .btn,.well,.panel {
-    border-radius:0;
+    border-radius: 0;
+}
+
+.btn-black p -> a:hover {
+	color: white;
 }
 
 .btn-black {
     background-color:#111;
+    opacity: 1 !important;
     border-color:#fff;
     color:#fff;
     border-radius: 50px;
@@ -48,8 +53,9 @@ a:hover {
     font-size:22px;
 }
 
-.btn-danger {
-	border-radius: 50px;
+.btn-primary {
+	background-color: #5491bd !important;
+
 }
 
 .icon-bar {
@@ -163,6 +169,18 @@ section {
 	background-color: #fff;
 }
 
+#section2 a:link , a:visited , a:active{color: black;}
+#section2 a:hover{color: green;}
+
+#section3 a:link , a:visited , a:active{color: white;}
+#section3 a:hover{color: green;}
+
+#section4 a:link , a:visited , a:active{color: black;}
+#section4 a:hover{color: green;}
+
+#section5 a:link , a:visited , a:active{color: white;}
+#section5 a:hover{color: green;}
+
 #section3 {
 	background-color: #5491bd;
 	opacity: 0.8;
@@ -199,7 +217,7 @@ section {
 
 
 #section9 {
-	background-color: #111;
+	background-color: #5491bd;
 	color: #fff;
 }
 
@@ -226,6 +244,7 @@ footer {
 }
 
 .profilpad {
+	padding-bottom: 10px;
 	padding-left: 150px;
 }
 
@@ -239,14 +258,18 @@ footer {
 	border: 1px solid;
 	color: #fff;
 	background-color: #111;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 
+}
+
+.massagebtn {
+	float: right;
 }
 
 .massagemain {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #f3f3f3;
+	background-color: #fff;
 	max-width: 100%;
  	min-height: 105px;
 
@@ -260,4 +283,8 @@ footer {
 img {
 	max-width: 100%;
  	height: auto;
+}
+
+.profil {
+	font-size: 30px;
 }
