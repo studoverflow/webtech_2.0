@@ -187,6 +187,7 @@ section {
   
 #section6 {
 	background-color: #f1f1f1;
+	display: none;
 }
 
 
@@ -194,12 +195,14 @@ section {
 	background-color: #5491bd;
 	color: #fff;
 	opacity: 0.95;
+	display: none;
 }
 
 
 #section8 {
 	background-color: #fff;
 	color: #111;
+	display: none;
 
 }
 
@@ -207,6 +210,7 @@ section {
 #section9 {
 	background-color: #5491bd;
 	color: #fff;
+	display: none;
 }
 
 
@@ -214,11 +218,13 @@ section {
 	background-color: #fff;
 	opacity: 0.8;
 	color: #111;
+	display: none;
 }
 
 #section11 {
 	background-color: #fff;
 	color: #111;
+	display: none;
 }
 
 footer {
