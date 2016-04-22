@@ -171,16 +171,35 @@ section {
 	background-color: #fff;
 }
 
-#section2 a:link , a:visited , a:active{color: black;}
+#section2 a:link , a:visited , a:active{
+	color: black;
+}
 
-#section3 a:link , a:visited , a:active{color: white;}
-#section3 a:hover{color: black;}
+#section2 a:hover{
+	color: #337ab7;
+}
 
-#section4 a:link , a:visited , a:active{color: black;}
-#section4 a:hover{color: black;}
+#section3 a:link , a:visited , a:active{
+	color: white;
+}
+#section3 a:hover{
+	color: black;
+}
 
-#section5 a:link , a:visited , a:active{color: white;}
-#section5 a:hover{color: black;}
+#section4 a:link , a:visited , a:active{
+	color: black;
+}
+#section4 a:hover{
+	color: #337ab7;
+}
+
+#section5 a:link , a:visited , a:active{
+	color: white;
+}
+
+#section5 a:hover{
+	color: black;
+}
 
 #section3 {
 	background-color: #5491bd;
@@ -250,13 +269,13 @@ footer {
     height: 50px;
 }
 
-.massagetop {
+.messagetop {
 	border: 1px solid;
 	color: #fff;
 	background-color: #111;
 }
 
-.massagebot {
+.messagebot {
 	border: 1px solid;
 	color: #fff;
 	background-color: #111;
@@ -264,11 +283,11 @@ footer {
 
 }
 
-.massagebtn {
+.messagebtn {
 	float: right;
 }
 
-.massagemain {
+.messagemain {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: #fff;
@@ -277,7 +296,7 @@ footer {
 
 }
 
-.massageimg {
+.messageimg {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
