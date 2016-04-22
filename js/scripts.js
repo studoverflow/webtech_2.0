@@ -32,7 +32,10 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 function manipulateSection(section){
 	
-	document.getElementById('section').style.display = "block";
 	
+	$(section).css({
+    display: 'block'
+
+});
 	
 }
