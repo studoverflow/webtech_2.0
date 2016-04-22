@@ -14,9 +14,11 @@ html,body {
     }
 }
 
-a {
-    color:#999;
-}
+a { color: #737373; }
+
+a:visited { color: #737373; }
+a:link { color: #737373; }
+a:hover { color: #737373; }
 
 .navborderbot {
 	border-bottom: 1px solid #fff !important;
