@@ -132,8 +132,20 @@ section {
     transform-style: preserve-3d;
 }
 
+.margintop5 {
+	margin-top: 5px;
+}
+
+.margintop10 {
+	margin-top: 10px;
+}
+
 .margintop15 {
 	margin-top: 15px;
+}
+
+.margintop20 {
+	margin-top: 20px;
 }
 
 .margquestion {
@@ -160,16 +172,15 @@ section {
 }
 
 #section2 a:link , a:visited , a:active{color: black;}
-#section2 a:hover{color: green;}
 
 #section3 a:link , a:visited , a:active{color: white;}
-#section3 a:hover{color: green;}
+#section3 a:hover{color: black;}
 
 #section4 a:link , a:visited , a:active{color: black;}
-#section4 a:hover{color: green;}
+#section4 a:hover{color: black;}
 
 #section5 a:link , a:visited , a:active{color: white;}
-#section5 a:hover{color: green;}
+#section5 a:hover{color: black;}
 
 #section3 {
 	background-color: #5491bd;
@@ -237,11 +248,6 @@ footer {
     padding-bottom:2px;
     border-top: 1px solid #fff !important;
     height: 50px;
-}
-
-.profilpad {
-	padding-bottom: 10px;
-	padding-left: 150px;
 }
 
 .massagetop {
