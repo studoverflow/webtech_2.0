@@ -32,10 +32,8 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 function manipulateSection(section){
 	
-	
-	$(section).css({
-    display: 'block'
+	$(section).css({ display: 'block' });
+	$('#myModal').modal('hide');
+};
 
-});
-	
-}
+
