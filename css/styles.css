@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 
 html,body {
 	height:100%;
     background:center no-repeat fixed url('../img/bg.jpg');
     background-size: cover;
     color:#444;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -153,7 +153,7 @@ section {
 }
 
 @media (min-width:768px) {
-    .v-center {
+	.v-center {
         display:table;
         height:90%;
         width:100%;
