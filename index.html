@@ -452,42 +452,37 @@
 			<h1 class="text-center">Registrierung</h1>
 			<section class="container.fluid">
 				<form class="row" action="#" method="post" name="registration" >
-					<div class="col-sm-offset-4 col-sm-8">
-						<label>
-							<span class="glyphicon glyphicon-user"></span>
-							 Username
-						 </label>
-						<br />
-						<input type="text" name="user" size="50">
-					</div>
-					<div class="col-sm-offset-4 col-sm-8 margintop15">
-						<label>
-							<span class="glyphicon glyphicon-envelope"></span> E-Mail</label>
-						<br />
-						<input type="email" name="email" size="50" >
-					</div>
-					<div class="col-sm-offset-4 col-sm-8 margintop15">
-						<label>
-							<span class="glyphicon glyphicon-envelope"></span> E-Mail bestätigen</label>
-						<br />
-						<input type="email" name="email" size="50">
-					</div>
-					<div class="col-sm-offset-4 col-sm-8 margintop15">
-						<label>
-							<span class="glyphicon glyphicon-lock"></span> Passwort</label>
-						<br />
-						<input type="password" name="passwort" size="50">
-					</div>
-					<div class="col-sm-offset-4 col-sm-8 margintop15">
-						<label>
-							<span class="glyphicon glyphicon-lock"></span> Passwort bestätigen</label>
-						<br />
-						<input type="password" name="passwort" size="50">
-					</div>
-					<div class="col-sm-offset-4 col-sm-8 margintop15">
-						<br />
-						<input class="btn-primary btn-xs" type="button" value="Registrieren">
-					</div>
+					<fieldset class="form-group">
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<label> <span class="glyphicon glyphicon-user"></span> Username </label>
+							<br />
+							<input type="text" name="user" class="form-control">
+						</div>
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail</label>
+							<br />
+							<input type="email" name="email" class="form-control" >
+						</div>
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail bestätigen</label>
+							<br />
+							<input type="email" name="email" class="form-control">
+						</div>
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<label> <span class="glyphicon glyphicon-lock"></span> Passwort</label>
+							<br />
+							<input type="password" name="passwort" class="form-control">
+						</div>
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<label> <span class="glyphicon glyphicon-lock"></span> Passwort bestätigen</label>
+							<br />
+							<input type="password" name="passwort" class="form-control">
+						</div>
+						<div class="col-sm-offset-3 col-sm-6 margintop15">
+							<br />
+							<input class="btn-primary btn-xs" type="button" value="Registrieren" class="form-control">
+						</div>
+					</fieldset>
 				</form>
 			</section>
 		</section>
@@ -701,11 +696,11 @@
 				</div>
 			</section>
 		</section>
-		<footer class="navbar-trans navbar-fixed-bottom" title="footer">
+		<footer class="container-fluid navbar-trans navbar-fixed-bottom" title="footer">
 			<div class="container margintop15">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 column">
-						<div style="text-align: center">
+						<div id="footerfont">
 							<a href="#section8" onclick="manipulateSection('#section8')">Impressum | </a>
 							<a href="#section9" onclick="manipulateSection('#section9')">Datenschutz | </a>
 							<a href="#section10" onclick="manipulateSection('#section10')">Rechtliche Hinweise</a>

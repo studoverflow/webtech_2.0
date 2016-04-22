@@ -309,3 +309,14 @@ img {
 .profil {
 	font-size: 30px;
 }
+
+#footerfont {
+	font-size: 65%;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+#footerfont a:hover {
+	text-decoration: none;
+}
