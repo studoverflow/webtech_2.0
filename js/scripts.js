@@ -28,3 +28,14 @@ $('a[href*=#]:not([href=#])').click(function() {
       }
     }
 });
+
+
+function manipulateSection(section){
+	
+	
+	$(section).css({
+    display: 'block'
+
+});
+	
+}
