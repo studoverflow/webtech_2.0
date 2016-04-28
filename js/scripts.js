@@ -36,4 +36,8 @@ function manipulateSection(section){
 	$('#myModal').modal('hide');
 };
 
+function hidemodal(){
+    $('#myModal').modal('hide');
+}
+
 
