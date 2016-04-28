@@ -132,6 +132,13 @@ section {
     transform-style: preserve-3d;
 }
 
+.paddingoverlay {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .margintop5 {
 	margin-top: 5px;
 }
