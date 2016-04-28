@@ -14,18 +14,24 @@ html,body {
     }
 }
 
-a { color: #737373; }
-
-a:visited { color: #737373; }
-a:link { color: #737373; }
-a:hover { color: #737373; }
-
-.navborderbot {
-	border-bottom: 1px solid #fff !important;
-	
+a { 
+	color: #737373; 
+}
+a:visited { 
+	color: #737373; 
+}
+a:link { 
+	color: #737373; 
+}
+a:hover { 
+	color: #737373; 
 }
 
-.btn,.well,.panel {
+.navborderbot {
+	border-bottom: 1px solid #fff !important;	
+}
+
+.btn, .well, .panel {
     border-radius: 0;
 }
 
