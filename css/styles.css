@@ -40,11 +40,19 @@ a:hover {
 }
 
 .btn-black {
+
+
+
+
     background-color:#111;
     opacity: 1 !important;
-    border-color:#fff;
+    border: 2px solid #fff;
     color:#fff;
     border-radius: 50px;
+}
+
+a.btn-black:hover{
+    color:#5491bd
 }
 
 .btn-huge {
@@ -176,7 +184,7 @@ section {
   
 #section1 {
 	background-color: #5491bd;
-	opacity: 0.6;
+	opacity: 0.8;
 	color:#fff;
 }
   
