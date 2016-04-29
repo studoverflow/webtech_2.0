@@ -181,6 +181,12 @@ section {
     background-color: lightgreen;
 }
 
+.errorText {
+    font-size: 10px;
+    color: red;
+    float: right;
+}
+
 @media (min-width:768px) {
 	.v-center {
         display:table;

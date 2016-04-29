@@ -42,21 +42,26 @@ function closeLogin(){
 function regUsername(args){
 
     var element = document.getElementById("username");
+    var errText = document.getElementById("usernameErr");
     var myRegExp = new RegExp('[0-9]');
 
     for(var i = 0; i<args.length; i++){
         if(args.length >= 3 && !args.match(myRegExp)){
             element.classList.remove("fieldred");
             element.classList.add("fieldgreen");
+            // Err Text noch Removen
         } else {
             element.classList.remove("fieldgreen");
             element.classList.add("fieldred");
+            errText.innerHTML = "Mindestlänge 3 Buchstaben ohne Zahlen und Sonderzeichen";
+
         }
     }
 
     if(args.length == 0) {
         element.classList.remove("fieldgreen");
         element.classList.remove("fieldred");
+        // Err Text noch Removen
     }
 
 }
