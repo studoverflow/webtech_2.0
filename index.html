@@ -59,7 +59,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<p class="text-center margintop15">
-								<a href="#" data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-user"></span> Login </a>
+								<a href="#" data-toggle="modal" data-target="#login"> <span class="glyphicon glyphicon-user"></span> Login </a>
 							</p>
 						</ul>
 					</div>
@@ -73,7 +73,7 @@
 				<h2 class="text-center lato animate slideInDown">Das Studentenportal</h2>
 				<p class="text-center">
 					<br>
-					<a type="button" href="#" data-toggle="modal" data-target="#myModal5" class="btn btn-black btn-lg btn-huge">jetzt Mitglied werden</a>
+					<a type="button" href="#" data-toggle="modal" data-target="#registration" class="btn btn-black btn-lg btn-huge">jetzt Mitglied werden</a>
 				</p>
 			</div>
 			<a href="#section2">
@@ -446,51 +446,6 @@
 			<!--/container-->
 		</section>
 
-		<article  id="myModal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<article class="modal-dialog">
-                <article class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-							x
-				    </button>
-                        <h2 class="text-center">Registrierung</h2>
-					</div>
-				<form class="row modal-body paddingoverlay" action="#" method="post" name="registration" >
-					<fieldset class="form-group">
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
-							<label> <span class="glyphicon glyphicon-user"></span> Username </label>
-							<br />
-							<input type="text" name="user" class="form-control">
-						</div>
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
-							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail</label>
-							<br />
-							<input type="email" name="email" class="form-control" >
-						</div>
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
-							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail bestätigen</label>
-							<br />
-							<input type="email" name="email" class="form-control">
-						</div>
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
-							<label> <span class="glyphicon glyphicon-lock"></span> Passwort</label>
-							<br />
-							<input type="password" name="passwort" class="form-control">
-						</div>
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
-							<label> <span class="glyphicon glyphicon-lock"></span> Passwort bestätigen</label>
-							<br />
-							<input type="password" name="passwort" class="form-control">
-						</div>
-						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15 form-group">
-							<input class="btn btn-primary btn-lg btn-block" type="submit" value="Registrieren">
-						</div>
-					   </fieldset>
-                    </form>
-                </article>
-			</article>
-		</article>
-
 		<section class="container-fluid" id="section7" title="profil">
 			<h1 class="text-center">Profil</h1>
 			<section class="container">
@@ -594,9 +549,9 @@
 				<div class="row">
 					<div class="col-xs-12 col-md-12 column">
 						<div id="footerfont">
-							<a href="#" data-toggle="modal" data-target="#myModal4">Impressum </a> |
-							<a href="#" data-toggle="modal" data-target="#myModal3">Datenschutz </a> |
-							<a href="#" data-toggle="modal" data-target="#myModal2">Rechtliche Hinweise</a>
+							<a href="#" data-toggle="modal" data-target="#impressum">Impressum </a> |
+							<a href="#" data-toggle="modal" data-target="#datenschutz">Datenschutz </a> |
+							<a href="#" data-toggle="modal" data-target="#rechtlicheHinweise">Rechtliche Hinweise</a>
 						</div>
 					</div>
 				</div>
@@ -605,18 +560,63 @@
 			<!-- /container -->
 		</footer>
 
-		<div class="scroll-up">
-			<a href="#"><i class="fa fa-angle-up"></i></a>
+		<div  id="registration" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+                <article class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h2 class="text-center">
+						<br>
+						Registrierung</h2>
+					</div>
+				<form class="row modal-body paddingoverlay" action="#" method="post" name="registration" >
+					<fieldset class="form-group">
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+							<label> <span class="glyphicon glyphicon-user"></span> Username </label>
+							<br />
+							<input type="text" name="user" class="form-control">
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
+							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail</label>
+							<br />
+							<input type="email" name="email" class="form-control" >
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
+							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail bestätigen</label>
+							<br />
+							<input type="email" name="email" class="form-control">
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
+							<label> <span class="glyphicon glyphicon-lock"></span> Passwort</label>
+							<br />
+							<input type="password" name="passwort" class="form-control">
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
+							<label> <span class="glyphicon glyphicon-lock"></span> Passwort bestätigen</label>
+							<br />
+							<input type="password" name="passwort" class="form-control">
+						</div>
+						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15 form-group">
+							<input class="btn btn-primary btn-lg btn-block" type="submit" value="Registrieren">
+						</div>
+					   </fieldset>
+                    </form>
+                </article>
+			</div>
 		</div>
 
-        <section id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<section class="modal-dialog">
+        <div id="impressum" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
 				<article class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-							x
-				    </button>
-                    <h2 class="text-center">Impressum</h2>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h2 class="text-center">
+						<br>
+						Impressum</h2>
 					</div>
 					<div class="modal-body row paddingoverlay">
 						Angaben gemäß § 5 TMG:
@@ -675,17 +675,19 @@
 						Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 					</div>
 				</article>
-			</section>
-		</section>
+			</div>
+		</div>
 
-		<section id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<section class="modal-dialog">
+		<div id="datenschutz" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
 				<article class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-							x
-				    </button>
-                    <h2 class="text-center">Datenschutzerklärung</h2>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h2 class="text-center">
+						<br>
+						Datenschutzerklärung</h2>
 					</div>
 					<div class="modal-body row paddingoverlay">
 						Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
@@ -703,17 +705,19 @@
 						aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
 					</div>
 				</article>
-			</section>
-		</section>
+			</div>
+		</div>
 
-		<section id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<section class="modal-dialog">
+		<div id="rechtlicheHinweise" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
 				<article class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x
-				    </button>
-                    <h2 class="text-center">Rechtliche Hinweise</h2>
-
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h2 class="text-center">
+						<br>
+						Rechtliche Hinweise</h2>
 					</div>
 					<div class="modal-body row paddingoverlay">
 						Alle Fragen und Antworten innerhalb unseres Internetdienstes sind Beiträge der Nutzer von StudOverflow.
@@ -730,12 +734,10 @@
 						eines Arztes verwendet werden sollten.
 					</div>
 				</article>
-			</section>
-		</section>
+			</div>
+		</div>
 
-
-
-		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div id="login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -763,11 +765,12 @@
 						</form>
 					</div>
 					<div class="modal-footer">
-						<h6 class="text-center">Privatsphäre ist uns sehr wichtig, klicken Sie <a href="#" data-toggle="modal" data-target="#myModal3" onclick="hidemodal()">hier</a> um zu erfahren warum.</h6>
+						<h6 class="text-center">Privatsphäre ist uns sehr wichtig, klicken Sie <a href="#" data-toggle="modal" data-target="#datenschutz" onclick="closeLogin()">hier</a> um zu erfahren warum.</h6>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!--scripts for online use loaded here-->
 		<!-- 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
