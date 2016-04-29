@@ -576,7 +576,7 @@
 						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
 							<label> <span class="glyphicon glyphicon-user"></span> Username </label>
 							<br />
-							<input type="text" name="user" class="form-control">
+							<input id="username" type="text" name="user" class="form-control" oninput="regUsername(document.getElementById('username').value)">
 						</div>
 						<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 margintop15">
 							<label> <span class="glyphicon glyphicon-envelope"></span> E-Mail</label>

@@ -1,3 +1,5 @@
+// Scroll animation
+
 $('body').scrollspy({
   target: '#navbar-collapsible',
   offset: 52
@@ -29,10 +31,32 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 
+// Overlay login close
 
 function closeLogin(){
 	$('#login').modal('hide');
 };
 
+// Registration
 
+function regUsername(args){
 
+    var element = document.getElementById("username");
+    var myRegExp = new RegExp('[0-9]');
+
+    for(var i = 0; i<args.length; i++){
+        if(args.length >= 3 && !args.match(myRegExp)){
+            element.classList.remove("fieldred");
+            element.classList.add("fieldgreen");
+        } else {
+            element.classList.remove("fieldgreen");
+            element.classList.add("fieldred");
+        }
+    }
+
+    if(args.length == 0) {
+        element.classList.remove("fieldgreen");
+        element.classList.remove("fieldred");
+    }
+
+}

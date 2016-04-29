@@ -14,21 +14,21 @@ html,body {
     }
 }
 
-a { 
-	color: #737373; 
+a {
+	color: #737373;
 }
-a:visited { 
-	color: #737373; 
+a:visited {
+	color: #737373;
 }
-a:link { 
-	color: #737373; 
+a:link {
+	color: #737373;
 }
-a:hover { 
-	color: #737373; 
+a:hover {
+	color: #737373;
 }
 
 .navborderbot {
-	border-bottom: 1px solid #fff !important;	
+	border-bottom: 1px solid #fff !important;
 }
 
 .btn, .well, .panel {
@@ -137,7 +137,7 @@ a.btn-black:hover{
 }
 
 section {
-	padding-top:60px;  
+	padding-top:60px;
     padding-bottom:50px;
     min-height:100%;
     min-height:calc(100% - 0);
@@ -173,6 +173,14 @@ section {
 	margin-bottom: 50px;
 }
 
+.fieldred {
+    background-color: lightcoral;
+}
+
+.fieldgreen {
+    background-color: lightgreen;
+}
+
 @media (min-width:768px) {
 	.v-center {
         display:table;
@@ -181,13 +189,13 @@ section {
         vertical-align:middle;
     }
 }
-  
+
 #section1 {
 	background-color: #5491bd;
 	opacity: 0.8;
 	color:#fff;
 }
-  
+
 #section2 {
 	background-color: #fff;
 }
@@ -231,13 +239,13 @@ section {
 #section4 {
 	background-color: #fff;
 }
-  
+
 #section5 {
 	background-color: #5491bd;
 	opacity: 0.8;
 	color:#fff;
 }
-  
+
 #section6 {
 	background-color: #f1f1f1;
 	display: none;
@@ -335,7 +343,7 @@ img {
 	font-size: 65%;
 	text-align: center;
 	text-decoration: none;
-	
+
 }
 
 #footerfont a:hover {
