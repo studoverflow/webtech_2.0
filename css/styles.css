@@ -20,15 +20,13 @@ a {
 a:visited {
 	color: #737373;
 }
-a:link {
-	color: #737373;
 }
 a:hover {
 	color: #737373;
 }
 
 .navborderbot {
-	border-bottom: 1px solid #fff !important;
+	border-bottom: 2px solid #fff !important;
 }
 
 .btn, .well, .panel {
@@ -40,10 +38,6 @@ a:hover {
 }
 
 .btn-black {
-
-
-
-
     background-color:#111;
     opacity: 1 !important;
     border: 2px solid #fff;
@@ -214,11 +208,19 @@ section {
 	color: #337ab7;
 }
 
+#section3 a:hover{
+	color: black;
+}
+
 #section3 a:link , a:visited , a:active{
 	color: white;
 }
-#section3 a:hover{
-	color: black;
+
+
+#section3 {
+	background-color: #5491bd;
+	opacity: 0.8;
+	color:#fff;
 }
 
 #section4 a:link , a:visited , a:active{
@@ -226,20 +228,6 @@ section {
 }
 #section4 a:hover{
 	color: #337ab7;
-}
-
-#section5 a:link , a:visited , a:active{
-	color: white;
-}
-
-#section5 a:hover{
-	color: black;
-}
-
-#section3 {
-	background-color: #5491bd;
-	opacity: 0.8;
-	color:#fff;
 }
 
 #section4 {
@@ -252,46 +240,36 @@ section {
 	color:#fff;
 }
 
-#section6 {
-	background-color: #f1f1f1;
-	display: none;
+#section5 a:link , a:visited , a:active{
+	color: white;
 }
 
+#section5 a:hover{
+	color: black;
+}
+
+#section6 a:link , a:visited , a:active{
+	color: black;
+}
+#section6 a:hover{
+	color: #337ab7;
+}
+
+#section6 {
+	background-color: #fff;
+    display: none;
+}
+
+#section7 a:link , a:visited , a:active{
+	color: black;
+}
+#section7 a:hover{
+	color: #337ab7;
+}
 
 #section7 {
-	background-color: #5491bd;
-	color: #fff;
-	opacity: 0.95;
-	display: none;
-}
-
-
-#section8 {
 	background-color: #fff;
-	color: #111;
-	display: none;
-
-}
-
-
-#section9 {
-	background-color: #5491bd;
-	color: #fff;
-	display: none;
-}
-
-
-#section10 {
-	background-color: #fff;
-	opacity: 0.8;
-	color: #111;
-	display: none;
-}
-
-#section11 {
-	background-color: #fff;
-	color: #111;
-	display: none;
+    display: none;
 }
 
 footer {
@@ -300,7 +278,7 @@ footer {
     min-height:20px;
     padding-top:2px;
     padding-bottom:2px;
-    border-top: 1px solid #fff !important;
+    border-top: 2px solid #fff !important;
     height: 50px;
 }
 

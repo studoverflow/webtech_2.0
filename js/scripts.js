@@ -39,29 +39,118 @@ function closeLogin(){
 
 // Registration
 
-function regUsername(args){
 
-    var element = document.getElementById("username");
-    var errText = document.getElementById("usernameErr");
-    var myRegExp = new RegExp('[0-9]');
+function registrationEvent(name){
+    switch(name){
+        case "username":
+            regUsername(document.getElementById('username').value);
+            break;
+        case "email":
+            regEmail(document.getElementById('email').value);
+            break;
+        case "bemail":
+            regbEmail(document.getElementById('bemail').value);
+            break;
+        case "passwort":
+            regPasswort(document.getElementById('passwort').value);
+            break;
+        case "bpasswort":
+            regbPasswort(document.getElementById('bpasswort').value);
+            break;
 
-    for(var i = 0; i<args.length; i++){
-        if(args.length >= 3 && !args.match(myRegExp)){
-            element.classList.remove("fieldred");
-            element.classList.add("fieldgreen");
-            // Err Text noch Removen
-        } else {
-            element.classList.remove("fieldgreen");
-            element.classList.add("fieldred");
-            errText.innerHTML = "Mindestlänge 3 Buchstaben ohne Zahlen und Sonderzeichen";
+    }
+}
 
-        }
+function clearField(args){
+
+    var element = document.getElementById(args);
+
+    var errTextmail = document.getElementById("emailErr");
+    var errTextBmail = document.getElementById("emailbErr");
+
+    if(args == email){
+        errTextmail.innerHTML = "";
+    } else {
+        errTextBmail.innerHTML = "";
     }
 
+        element.classList.remove("fieldgreen");
+        element.classList.remove("fieldred");
+
+
+
+}
+
+function regUsername(args){
+    var element = document.getElementById("username");
+    var errText = document.getElementById("usernameErr");
+
+     var regex =  new RegExp('[a-zA-Z]*', 'i');
+
+    if(args.length >= 3 && (args.match(regex) == args)){
+            console.log(args.match(regex));
+            element.classList.remove("fieldred");
+            element.classList.add("fieldgreen");
+            errText.innerHTML = "";
+    } else {
+            element.classList.remove("fieldgreen");
+            element.classList.add("fieldred");
+            errText.innerHTML = "Mindestlänge 3 Buchstaben ohne Zahlen und Sonderzeichen.";
+    }
     if(args.length == 0) {
         element.classList.remove("fieldgreen");
         element.classList.remove("fieldred");
-        // Err Text noch Removen
+        errText.innerHTML = "";
     }
+
+}
+
+function regEmail(args){
+
+    var element = document.getElementById("email");
+    var errText = document.getElementById("emailErr");
+
+    var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    console.log(regex.test(args))
+    if(regex.test(args)){
+        element.classList.remove("fieldred");
+        element.classList.add("fieldgreen");
+        errText.innerHTML = "";
+    } else {
+        element.classList.remove("fieldgreen");
+        element.classList.add("fieldred");
+        errText.innerHTML = "E-Mail ist nicht zulässig.";
+    }
+    if(args.length == 0 || onfocus){
+        element.classList.remove("fieldgreen");
+        element.classList.remove("fieldred");
+        errText.innerHTML = "";
+    }
+
+
+}
+
+function regbEmail(args){
+
+    var valueEMail = document.getElementById('email').value
+    var element = document.getElementById("bemail");
+    var errText = document.getElementById("emailbErr");
+
+    if(args == valueEMail){
+        element.classList.remove("fieldred");
+        element.classList.add("fieldgreen");
+        errText.innerHTML = "";
+    } else {
+        element.classList.remove("fieldgreen");
+        element.classList.add("fieldred");
+        errText.innerHTML = "E-Mail ist unterschiedlich.";
+    }
+    if(args.length == 0 ){
+        element.classList.remove("fieldgreen");
+        element.classList.remove("fieldred");
+        errText.innerHTML = "";
+    }
+
 
 }
